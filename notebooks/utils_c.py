@@ -32,8 +32,6 @@ def get_landmark(p, i):
 
     return np.array(landmark)
 
-get_landmark(p="i", i=1)
-
 
 def get_data(p,i):
     """ Args:
