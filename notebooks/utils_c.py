@@ -50,3 +50,11 @@ def get_data_paths(p,i):
     image_p = f"../data/nifti/copd{i}_{p}BHCT.nii.gz"
     landmark_p = f"../data/keypoints/copd{i}_300_{p}BH_xyz_r1.txt"
     return image_p, landmark_p
+
+# Get the paths for the images and landmarks
+def get_paths(n):
+    # Set inhale image as fixed image and exhale image as moving image
+    img_f, landmark_f = get_data_paths(p="i", i=n)
+    img_m, landmark_m = get_data_paths(p="e", i=n)
+
+    return img_f, img_m, landmark_f, landmark_m
