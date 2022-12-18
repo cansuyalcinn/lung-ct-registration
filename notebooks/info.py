@@ -61,7 +61,7 @@ class patient: #inherit from path_label path and seg functions
         return f'data/keypoints/copd{self.pat_num}_300_{type}BH_xyz_r1.{format}'
     
     # Read landmarks 
-    def get_landmark(self, type):
+    def get_landmark(self, type, units = "mm"):
         """get the landmarks of the patient
 
         Args:
@@ -78,6 +78,9 @@ class patient: #inherit from path_label path and seg functions
             landmark = pd.read_csv(file_path, sep="\t", header=None)
         else:
             landmark = pd.read_csv(file_path, sep="\t ", engine ='python', header=None)
+        
+        if units == 'voxel':
+            return np.array(landmark)
         
         # Multiply spacing to get distance in mm
         landmark = landmark * np.array([x,y,z])
