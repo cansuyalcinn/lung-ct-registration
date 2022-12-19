@@ -53,3 +53,18 @@ def calculate_tre(fixed_points, moving_points):
     tre = np.sqrt(np.sum((fixed_points - moving_points) ** 2, axis=1))
     return tre
 
+# save the array as a new nifti image
+def save_as_nifti(array, filename, reference_image):
+    """Save array as nifti image
+
+    Args:
+        array (array): array to be saved
+        filename (str): path to save
+        reference_image (str): path of reference image
+    """
+    reference_image = sitk.ReadImage(reference_image)
+    image = sitk.GetImageFromArray(array)
+    image.SetOrigin(reference_image.GetOrigin())
+    image.SetSpacing(reference_image.GetSpacing())
+    image.SetDirection(reference_image.GetDirection())
+    sitk.WriteImage(image, filename)
