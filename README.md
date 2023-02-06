@@ -3,6 +3,10 @@
 The challenge was the final project of the Medical image registration course given in the University of Girona for the [MAIA programme](https://maiamaster.udg.edu/).
 The final report can be found [here](MIRA_FINAL_REPORT.pdf).
 
+|![img](lung_reg.PNG)|
+| :--: | 
+| *Example of the images used for the registration where inhale on the left and exhale on the right, landmark point is represented with a green dot.* |
+
 ## Authors of the project 
 - Ricardo Montoya Del Angel [github](https://github.com/Likalto4) | [linkedin](https://www.linkedin.com/in/ricardo-montoya-del-angel)
 
