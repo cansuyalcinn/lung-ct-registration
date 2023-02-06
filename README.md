@@ -10,7 +10,7 @@ The final report can be found [here](MIRA_FINAL_REPORT.pdf).
 ## Authors of the project 
 - Ricardo Montoya Del Angel [github](https://github.com/Likalto4) | [linkedin](https://www.linkedin.com/in/ricardo-montoya-del-angel)
 
-- Cansu Yalçın [github](https://github.com/cansuyalcinn) | [linkedin](www.linkedin.com/in/cansuyalcin)
+- Cansu Yalçın [github](https://github.com/cansuyalcinn) | [linkedin](https://www.linkedin.com/in/cansuyalcin/)
 
 - Alex Chicano [linkedin](https://www.linkedin.com/in/%C3%A0lex-chicano-83291a148/)
 
