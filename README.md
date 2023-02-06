@@ -18,7 +18,7 @@ We have performed non-rigid image registration on the Lung CT images taken from 
 
 The pipeline inluded:
 - Preprocessing step (changing the orientation of the images and convertion to NIFTI format), 
-- Segmentation step (using automated U-net segmentation tool for the lung CT images reference: [lungmask](https://github.com/JoHof/lungmask), 
+- Segmentation step (using automated U-net segmentation tool for the lung CT images. Reference: [lungmask](https://github.com/JoHof/lungmask), 
 - Registration (Affine (rigid), B-spline (non-rigid), compositon (Affine → B-spline))
 
 
